@@ -8,20 +8,21 @@
     <div class="post-content content">
       <%- page.content %>
     </div>
-    <div class="level post-meta">
-        <div class="level-left">
+    <div class="columns is-mobile post-meta">
+        <div class="column  is-half has-text-left is-paddingless">
             <% if(page.next) { %>
               更老一篇&nbsp;:&nbsp;<a href="<%- url_for(page.next.path)%>"><%= page.next.title %></a>
             <% } else { %>
               没有了，已经是最后文章
             <%}%>
         </div>  
-        <div class="level-right">
+        <div class="column  is-half has-text-right is-paddingless">
             <% if(page.prev) { %>
               更新一篇&nbsp;:&nbsp;<a href="<%- url_for(page.prev.path)%>"><%= page.prev.title %></a>
             <% } else { %>
               没有了，已经是最新文章
             <%}%>
         </div>
+        <div class="is-clearfix"></div>
     </div>
  </article>
