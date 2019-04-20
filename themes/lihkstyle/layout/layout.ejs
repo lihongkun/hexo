@@ -1,0 +1,20 @@
+<!DOCTYPE html>
+<html>
+  <%- partial('_partial/head') %>
+  <body>
+      <%- partial('_partial/header') %>
+      <main>
+        <div class="container">
+          <div class="columns">
+            <div class="column is-four-fifths">
+                <%- body %>
+            </div>
+            <div class="column">
+                <%- partial('_partial/aside') %>
+            </div>
+          </div>
+        </div>
+      </main>
+      <%- partial('_partial/footer') %>
+  </body>
+</html>

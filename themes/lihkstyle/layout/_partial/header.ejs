@@ -1,0 +1,40 @@
+<header>
+    <nav class="navbar is-fixed-top is-primary" role="navigation" aria-label="main navigation">
+        <div class="navbar-brand is-size-4">
+            <a class="navbar-item" href="<%- url_for() %>">
+                <%= config.title %>
+            </a>
+            <a role="button" class="navbar-burger burger" aria-label="menu" aria-expanded="false" data-target="navbar-menu">
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+                <span aria-hidden="true"></span>
+            </a>
+        </div>
+        <div id="navbar-menu" class="navbar-menu">
+            <div class="navbar-end">
+                <a class="navbar-item" href="/">
+                    首页
+                </a>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">基础</a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/categories/concurrent">并发</a>
+                        <a class="navbar-item" href="/categories/network">网络</a>
+                        <a class="navbar-item" href="/categories/security">安全</a>
+                    </div>
+                </div>
+                <div class="navbar-item has-dropdown is-hoverable">
+                    <a class="navbar-link">编程框架</a>
+                    <div class="navbar-dropdown">
+                        <a class="navbar-item" href="/categories/springframework">Spring</a>
+                        <a class="navbar-item" href="/categories/mybatis">Mybatis</a>
+                        <a class="navbar-item" href="/categories/springcloud">SpringCloud</a>
+                    </div>
+                </div>
+                <a class="navbar-item" href="/categories/troubleshooting">问题排查</a>
+                <a class="navbar-item" href="/categories/design">设计思路</a>
+                <a class="navbar-item" href="/categories/reading">读书笔记</a>
+            </div>
+            </div>
+    </nav>
+</header>
