@@ -86,4 +86,4 @@ theme: lihkstyle
 deploy:
   type: git
   repo: git@github.com:lihongkun/lihongkun.github.io.git
-  branch: gh-pages
+  branch: master
