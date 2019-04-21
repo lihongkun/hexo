@@ -3,9 +3,7 @@ title: 高效定位Java进程高CPU问题
 date: 2018-07-23
 categories:
 	- [troubleshooting]
-
-
-
+	- [jvm]
 ---
 
 线上环境某个业务无端卡住,死锁或者CPU使用率突然飙得很高.通常情况下是某些线程下的代码作祟.如何排查到指定线程和指定代码.
