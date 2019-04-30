@@ -1,12 +1,8 @@
-# Hexo Configuration
-## Docs: https://hexo.io/docs/configuration.html
-## Source: https://github.com/hexojs/hexo/
-
-# Site
+# Hexo Configuration# Site
 title: 泛泛之辈
 subtitle: 后端拾遗
 description:
-keywords: 
+keywords: Java,JVM,Spring,SpringCloud,Mybatis
 author: lihongkun
 language: zh-Hans
 timezone:

@@ -3,7 +3,21 @@
     <meta http-equiv="content-type" content="text/html; charset=utf-8">
     <meta content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=0" name="viewport">
 	<link rel="shortcut icon" href="/favicon.jpg" />
-    <title><%= config.title %></title>
+    <%
+        var title = page.title;
+        if (is_category()) {
+            title = __(page.category);
+        } 
+        else if (is_tag()) {
+            title = page.tag;
+        }
+    %>
+    <title><% if (title){ %><%= title %> | <% } %><%= config.title %></title>
+    <% if (page.keywords){ %>
+        <meta name="keywords" content="<%= page.keywords %>,<%= config.keywords %>" />
+    <% } else if (config.keywords){ %>
+        <meta name="keywords" content="<%= config.keywords %>" />
+    <%} %>
     <% if (theme.stylesheets !== undefined && theme.stylesheets.length > 0) { %>
         <% theme.stylesheets.forEach(function(url) { %>
           <link rel="stylesheet" href="<%=url%>">

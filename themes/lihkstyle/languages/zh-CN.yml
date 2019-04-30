@@ -14,4 +14,15 @@ posts_list: 目录
 about: 关于
 rss: 订阅
 main_site: 主站
-basic: 基本功
+
+### 分类
+concurrent: 并发
+network: 网络
+security: Web安全
+jvm: Java虚拟机
+springframework: Spring
+mybaits: Mybatis
+springcloud: SpringCloud
+troubleshooting: 问题排查
+design: 设计思路
+reading: 读书笔记

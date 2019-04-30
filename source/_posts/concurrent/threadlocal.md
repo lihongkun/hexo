@@ -3,6 +3,10 @@ title: 线程封闭与ThreadLocal
 date: 2018-12-03
 categories:
 	- concurrent
+keywords:
+	- 线程封闭
+	- ThreadLocal
+	- 线程安全
 ---
 访问共享数据,通常需要使用同步来保证变量的并发安全性.避免同步的方式就是不共享数据,如果数据只有单线程访问则不需要同步.这叫做线程封闭.
 
